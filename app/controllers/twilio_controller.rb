@@ -3,14 +3,14 @@ skip_before_action :verify_authenticity_token
   def index
     @speech = TwilioService.new.get_speech
     render :xml => @speech
-    #@speech.redirect('/messages', method: 'PUT')
   end
 
   def create
     if params['SpeechResult']
       asr_message = params["SpeechResult"]
-      Message.create(caller: asr_message)
-    else
+      Message.create(body: asr_message)
     end
+    @speech = TwilioService.new.say_goodbye  # how does this even hook into the current call?
+    render :xml => @speech
   end
 end
