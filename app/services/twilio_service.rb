@@ -8,8 +8,10 @@ class TwilioService
 
   def get_speech
     @response.gather(input: 'speech dtmf', timeout: 3, num_digits: 1) do |gather|
-      gather.say('Please state you name and your message.')
+      gather.say('What is your message for Daniels Banana Cabana?')
     end
+
+
   end
 
 
