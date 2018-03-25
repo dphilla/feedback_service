@@ -17,4 +17,3 @@ class TwilioService
   end
 end
 
-

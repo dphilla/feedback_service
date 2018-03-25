@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   get "/messages", to: 'twilio#index'
   post "/messages", to: 'twilio#create'
-
+  get "/inbox", to: 'inbox#index'
 end

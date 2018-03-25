@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta http-equiv="Content-Language" content="en">
+        <title>Here are your recent messages</title>
+        <link rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <% @messages.each do |message|%>
+        <div class="comment">
+            <div class="comment-avatar"></div>
+            <div class="comment-author">Caller<%= message.id %></div>
+            <div class="comment-text">
+              <%= message.body  %>
+                <div class="comment-date"><%= message.created_at %></div>
+            </div>
+        </div>
+        <% end %>
+    </body>
+</html>
