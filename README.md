@@ -5,5 +5,5 @@ Rails 5.1.4
 
 ### Integration with Twilio Automated Speech Recognition ###
 
-This is companion code a Twilio blog post.
+This is companion code for a Twilio blog post.
 
