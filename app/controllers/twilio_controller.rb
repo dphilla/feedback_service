@@ -10,7 +10,7 @@ skip_before_action :verify_authenticity_token
       asr_message = params["SpeechResult"]
       Message.create(body: asr_message)
     end
-    @speech = TwilioService.new.say_goodbye  # how does this even hook into the current call?
+    @speech = TwilioService.new.say_goodbye
     render :xml => @speech
   end
 end
