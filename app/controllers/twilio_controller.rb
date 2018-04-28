@@ -7,8 +7,9 @@ skip_before_action :verify_authenticity_token
 
   def create
     if params['SpeechResult']
-      asr_message = params["SpeechResult"]
-      Message.create(body: asr_message)
+      asr_message = params['SpeechResult']
+      asr_caller = params['From']
+      Message.create(caller: asr_caller, body: asr_message)
     end
     @speech = TwilioService.new.say_goodbye
     render :xml => @speech
