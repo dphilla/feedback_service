@@ -1,10 +1,4 @@
 ## Feedback Service ##
 
-Ruby 2.3.1
-
-Rails 5.1.4
-
-### Integration with [Twilio's Automated Speech Recognition](https://www.twilio.com/speech-recognition) ###
-
-Companion code for this [Twilio blog post](http://example.com).
+This is completed companion code for this [Twilio blog post](https://www.twilio.com/blog/2018/05/automated-speech-recognition-phone-calls-ruby-on-rails.html) that describes how to use Twilio's [Automated Speech Recognition](https://www.twilio.com/speech-recognition)) in Ruby on Rails Application that handles user phone calls.
 
